@@ -1,4 +1,4 @@
-baseURL = 'https://zhatrix.com/'
+baseURL = 'https://www.zhatrix.com/'
 DefaultContentLanguage = "zh"
 # languageCode = 'zh-cn'
 title = 'ZhaTrix的闲言碎语、工具箱和游乐场'
