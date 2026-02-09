@@ -1,9 +1,9 @@
 ---
 title: Mac搭建aria2
-author: zhatrix
-date: 2024-03-04 00:00:00 +0800
-categories: [技术]
-tags: [mac, download, aria2]
+# author: zhatrix
+date: 2024-03-04
+# categories: [技术]
+tags: ["mac", "download", "aria2"]
 ---
 ## **1. Homebrew安装Aria2**
 
@@ -347,4 +347,4 @@ open ./docs/index.html
 [https://wild-flame.github.io/guides/docs/mac-os-x-setup-guide/aria_2/readme](https://wild-flame.github.io/guides/docs/mac-os-x-setup-guide/aria_2/readme)
 
 ## Change Log
-2024-03-04   于杭州 创建 
+2024-03-04   于杭州 创建
