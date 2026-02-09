@@ -1,9 +1,9 @@
 ---
 title: Wifi密码破解
-author: zhatrix
-date: 2024-02-04 00:00:00 +0800
-categories: [技术]
-tags: [wifi, security, kali]
+# author: zhatrix
+date: 2024-02-04
+# categories: [技术]
+tags: ["wifi", "security", "kali"]
 ---
 
 ##通过字典（暴力）破解WIFI密码##
