@@ -1,9 +1,9 @@
 ---
 title: VBA中字符处理函数和替换函数的使用
-author: zhatrix
-date: 2017-01-13 00:00:00 +0800
-categories: [技术]
-tags: [vba]
+# author: zhatrix
+date: 2017-01-13
+# categories: [技术]
+tags: ["vba"]
 ---
 ## 替换函数repalce的用法
 
@@ -158,4 +158,3 @@ End Sub
 
 
 参考链接[在VBA中处理字符串常用的函数](http://www.51testing.com/html/19/226119-212209.html)
-
