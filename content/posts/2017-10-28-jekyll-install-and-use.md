@@ -1,8 +1,8 @@
 ---
 title: jekyll的安装使用
-author: zhatrix
-date: 2017-10-28 00:00:00 +0800
-categories: [技术]
+# author: zhatrix
+date: 2017-10-28
+# categories: [技术]
 tags: [blog]
 ---
 ## 一、搭建环境
@@ -254,4 +254,3 @@ jekyll build
 ## 开启jekyll本地预览
 jekyll server
 ```
-
