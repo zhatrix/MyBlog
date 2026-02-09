@@ -1,10 +1,11 @@
 ---
 title: 破解VBA密码
-author: zhatrix
-date: 2014-12-20 00:00:00 +0800
-categories: [技术]
-tags: [vba]
+# author: zhatrix
+date: 2014-12-20
+# categories: [技术]
+tags: ["vba"]
 ---
+
 最近工作需要转换华为TD的MML原始数据，自己原来有的一个版本相对较老了，在[mscbsc](www.mscbsc.com)下载了一个，奈何这个工具是一个exe格式的，我用7z解压后发现其实里面只是一个excel和一个license文件，license还只能够放在C盘，并且还过期了。
 
 在没有办法的情况下，只有自己hack了，发现可以通过更改日期继续使用，但毕竟这样使用不怎么方便。由于该程序是由VBA编写而成的，必须打开excel才能够使用，遂向通过打开VBA工程，查看license的方法，但是VBA工程存在密码，这样的情况下，只能先破解VBA密码解决了。
