@@ -1,9 +1,9 @@
 ---
 title: 使用Minimal Mistakes主题
-author: zhatrix
-date: 2017-10-29 00:00:00 +0800
-categories: [技术]
-tags: [blog]
+# author: zhatrix
+date: 2017-10-29
+# categories: [技术]
+tags: ["技术"]
 ---
 为了测试主题的可用性，在本地安装Ruby，见[安装jekyll](zhatrix.com/tech/2017-10-28-jekyll-install-and-use/)
 
