@@ -1,0 +1,26 @@
+
+# Hugo 自动生成的静态网页目录（由 Actions 自动生成，不需要上传源代码）
+public/
+resources/
+_vendor/
+
+# 运行 hugo server 时生成的临时缓存
+.hugo_build.lock
+
+# 操作系统生成的垃圾文件
+.DS_Store
+Thumbs.db
+
+# 本地环境变量或敏感信息（如果有）
+.env
+
+# --- 编辑器相关 ---
+# 排除 VS Code 的本地设置
+.vscode/
+# 排除 JetBrains (IntelliJ, WebStorm) 的配置文件
+.idea/
+
+# --- 依赖管理（如果你用了 Node.js 处理 CSS） ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
