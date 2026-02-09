@@ -1,8 +1,7 @@
 ---
 title: 建立github blog注意项
-author: zhatrix
-date: 2013-10-26 00:00:00 +0800
-categories: [技术]
+date: 2013-10-26
+#categories: [技术]
 tags: [github]
 ---
 **建立blog时的注意项**
