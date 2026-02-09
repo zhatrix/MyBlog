@@ -41,7 +41,7 @@ pygmentsCodefencesGuessSyntax = true
   readingTime = true
   wordCount = true
   useHLJS = true
-  socialShare = true
+  # socialShare = true
   delayDisqus = true
   showRelatedPosts = true
   showPageDates = true
@@ -66,7 +66,7 @@ pygmentsCodefencesGuessSyntax = true
 [Params.author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
   name = "ZhaTrix"
-  website = "https://zhatrix.com"
+  website = "zhatrix.com"
   github = "zhatrix"
   twitter = "zhangzhenyu"
   weibo = "armszhang"
