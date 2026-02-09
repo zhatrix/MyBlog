@@ -1,9 +1,9 @@
 ---
 title: 部署免费无限制图床
-author: zhatrix
-date: 2024-02-04 00:00:00 +0800
-categories: [免费]
-tags: [技术, 图床, telegraph, cloudflare]
+# author: zhatrix
+date: 2024-02-04
+# categories: [免费]
+tags: ["技术", "图床", "telegraph", "cloudflare"]
 ---
 ## 部署过程：
 
