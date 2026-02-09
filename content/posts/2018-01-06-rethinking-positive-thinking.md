@@ -1,6 +1,6 @@
 ---
 title: 如何实现愿望
-date: 2018-01-06 00:00:00 +0800
+date: 2018-01-06
 tags: ["阅读"]
 ---
 每个人都有愿望，都想与自己喜欢的人在一起，想做自己喜欢的事情，可怎么才能够实现愿望呢？《WOOP思维心理学》（原著：Rethinking Positive Thinking: Inside the New Science of Motivation）有一个独特的方法教给你，不一定能够让你成功，但却可以减少你失败的次数。
