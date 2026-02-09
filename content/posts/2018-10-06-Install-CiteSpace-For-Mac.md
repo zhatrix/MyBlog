@@ -1,9 +1,9 @@
 ---
 title: Mac下安装CiteSpace
-author: zhatrix
-date: 2018-10-06 00:00:00 +0800
-categories: [技术]
-tags: [citespace]
+# author: zhatrix
+date: 2018-10-06
+# categories: [技术]
+tags: [“citespace”]
 ---
 ## 下载
 
