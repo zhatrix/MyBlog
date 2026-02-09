@@ -1,9 +1,9 @@
 ---
 title: Mac抓包工具Whistle
-author: zhatrix
-date: 2023-10-17 00:00:00 +0800
-categories: [技术]
-tags: [代理, mac, 抓包]
+# author: zhatrix
+date: 2023-10-17
+# categories: [技术]
+tags: ["代理", "mac", "抓包"]
 ---
 帮LD下载小程序上的视频，看到专业级别的抓包工具fiddler、Charles，感觉有点杀鸡用牛刀，就找了一个轻便的工具：whistle，通过以下几步：
 1. 安装代理工具whistle
