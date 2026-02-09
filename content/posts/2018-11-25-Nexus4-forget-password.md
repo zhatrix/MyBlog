@@ -1,7 +1,7 @@
 ---
 title: Nexus4 忘记密码修复
 # author: zhatrix
-date: 2018-11-25 00:00:00 +0800
+date: 2018-11-25
 # categories: [技术]
 tags: [“nexus4”]
 ---
