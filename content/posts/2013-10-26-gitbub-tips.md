@@ -2,7 +2,7 @@
 title: 建立github blog注意项
 date: 2013-10-26
 #categories: [技术]
-tags: [github]
+tags: [“github”]
 ---
 **建立blog时的注意项**
 
