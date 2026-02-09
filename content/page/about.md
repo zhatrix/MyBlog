@@ -1,16 +1,54 @@
 ---
-title: About me
+title: 我是谁
 subtitle: Why you'd want to go on a date with me
 comments: false
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+## Summary
+我是ZhaTrix，中文名张振玉，一名产品经理，有多年B端产品规划设计经验，尤其擅长物流快递领域产品，同时对资产管理、系统权限管理有一定的经验。从不对自己设限，从大学毕业之后做的工作有爬基站、运营商机房运维、无线信号路测、GSM/TD/WCDMA/核心网数据分析、搭建BI平台，也曾做过数据分析师、数据库建模师，但还是想做产品经理，享受把产品变为现实，用户不断增加的快感。
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+## 理念
+“软件即管理”，“需求不是创造的，是发现的”。
 
-What else do you need?
+## 爱好
+心理学，跑步（最近3年每年500+km，至少一次马拉松）
 
-### my history
+## 其他经验
+20年以上的AS疾病经验，感谢杭州医保，感谢他们10年前就把修美乐放在医保目录里
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+## 产品:
+2022年-至今（负责）
+1. [黄金峡谷供应链管理系统](https://www.hzhjxg.cn/)(运营中)
+2. 黄金峡谷订货App(运营中)
+3. 黄金峡谷供货App(运营中)
+
+2021年-2022年（负责）
+1. 2022年杭州亚运会 物流管理管理系统（已关闭）
+
+2017年-2021年（负责）
+1. [中通云仓运输管理系统](https://tms.ztocwst.com/)(运营中)
+2. [中通云仓运营管控平台](https://omp.ztocwst.com/)(运营中)
+3. [中通云仓景天统一办公平台](https://home.ztocwst.com/)(运营中)
+4. 中通云仓景天App(运营中)
+
+2015年-2017年（参与）
+1. [快货运nTMS](https://ntms.kuaihuoyun.com/)(运营中)
+2. 快货运物流助手(运营中)
+3. [快货运BI](https://bi.kuaihuoyun.com)(已停用)
+4. 面单套打Excel宏
+
+2010年-2015年（参与）
+1. 北京电旗 Matrix核心网数据分析平台
+2. 北京电旗 SmartWave无线数据分析软件
+
+
+# Education
+
+2005.08～2009.6 解放军信息工程大学,电子科学与技术(信息安全)专业
+
+## Changelog
+
+-  2026-02-09  更新
+-  2023-10-10  更新
+-  2017-10-29  创建
