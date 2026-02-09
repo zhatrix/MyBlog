@@ -1,9 +1,9 @@
 ---
 title: Vim的简单用法
-author: zhatrix
-date: 2014-06-10 00:00:00 +0800
-categories: [技术]
-tags: [vim]
+# author: zhatrix
+date: 2014-06-10
+# categories: [技术]
+tags: ["vim"]
 ---
 ## 快捷键 ##
 
