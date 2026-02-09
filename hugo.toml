@@ -24,6 +24,9 @@ pygmentsCodefencesGuessSyntax = true
 #   [languages.en]
 #     contentDir = "content/en" # English
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 [Params]
   # homeTitle = "ZhaTrix 的闲言碎语、工具箱和游乐场" # Set a different text for the header on the home page
