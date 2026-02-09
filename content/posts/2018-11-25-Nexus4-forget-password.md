@@ -1,9 +1,9 @@
 ---
 title: Nexus4 忘记密码修复
-author: zhatrix
+# author: zhatrix
 date: 2018-11-25 00:00:00 +0800
-categories: [技术]
-tags: [nexus4]
+# categories: [技术]
+tags: [“nexus4”]
 ---
 N4好几年没有用了，之前设置的密码根本想不起来，本来想着有什么软件能够直接修复密码，保留原来的数据，试了几次无果，最后恢复原厂设置。
 
@@ -33,4 +33,3 @@ N4好几年没有用了，之前设置的密码根本想不起来，本来想着
 Change Log
 
 20181125  3个小时
-
