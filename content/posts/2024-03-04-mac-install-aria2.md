@@ -1,9 +1,7 @@
 ---
 title: Mac搭建aria2
 subtitle: aria2下载工具安装指南
-# author: zhatrix
 date: 2024-03-04
-# categories: [技术]
 tags: ["mac", "download", "aria2"]
 ---
 ## **1. Homebrew安装Aria2**
