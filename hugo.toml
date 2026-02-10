@@ -29,6 +29,12 @@ pygmentsCodefencesGuessSyntax = true
   [caches.images]
     dir = ':cacheDir/images'
 
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
 [Params]
   # homeTitle = "ZhaTrix 的闲言碎语、工具箱和游乐场" # Set a different text for the header on the home page
   subtitle = "不希望对你有用，只希望让未来的我知道曾经经历过"
@@ -82,12 +88,12 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     name = "标签"
     url = "tags"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "归档"
     url = "page/archive/"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     name = "关于我"
