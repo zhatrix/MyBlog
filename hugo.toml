@@ -107,14 +107,14 @@ pygmentsCodefencesGuessSyntax = true
 
 [[menu.main]]
     parent = "products"
-    name = "fungo"
+    name = "趣玩"
     url = "page/fungo/"
     weight = 1
 
 [[menu.main]]
     parent = "products"
-    name = "parentstools"
-    url = "page/parentstools/"
+    name = "奶爸工具箱"
+    url = "page/parentool/"
     weight = 2
 
 # [[menu.main]]
