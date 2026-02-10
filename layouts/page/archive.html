@@ -1,0 +1,99 @@
+{{ define "main" }}
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+
+        <div class="archive-list">
+          {{ $posts := where .Site.RegularPages "Type" "posts" }}
+          {{ $posts = $posts.ByDate.Reverse }}
+
+          <p class="archive-stats">共 {{ len $posts }} 篇文章</p>
+
+          {{ $currentYear := "" }}
+          {{ range $posts }}
+            {{ $year := .Date.Format "2006" }}
+            {{ if ne $year $currentYear }}
+              {{ $currentYear = $year }}
+              <h2 class="archive-year">{{ $year }}</h2>
+            {{ end }}
+
+            <div class="archive-item">
+              <span class="archive-date">{{ .Date.Format "01-02" }}</span>
+              <a href="{{ .Permalink }}" class="archive-title">{{ .Title }}</a>
+              {{ if .Params.tags }}
+                <span class="archive-tags">
+                  {{ range $index, $tag := .Params.tags }}
+                    {{ if gt $index 0 }}, {{ end }}
+                    <a href="{{ "tags" | absLangURL }}/{{ $tag | urlize }}/">#{{ $tag }}</a>
+                  {{ end }}
+                </span>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+
+      </article>
+    </div>
+  </div>
+</div>
+
+<style>
+.archive-stats {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.archive-year {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #008AFF;
+  color: #404040;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.archive-item {
+  margin-bottom: 12px;
+  padding-left: 10px;
+  line-height: 1.8;
+}
+
+.archive-date {
+  display: inline-block;
+  width: 60px;
+  color: #999;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+}
+
+.archive-title {
+  color: #404040;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.archive-title:hover {
+  color: #008AFF;
+  text-decoration: underline;
+}
+
+.archive-tags {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #999;
+}
+
+.archive-tags a {
+  color: #008AFF;
+  text-decoration: none;
+}
+
+.archive-tags a:hover {
+  text-decoration: underline;
+}
+</style>
+{{ end }}
