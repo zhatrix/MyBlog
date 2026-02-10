@@ -1,6 +1,6 @@
 baseURL = 'https://www.zhatrix.com/'
-DefaultContentLanguage = "en"
-# languageCode = 'zh-cn'
+DefaultContentLanguage = "zh"
+languageCode = 'zh-cn'
 title = 'ZhaTrix的闲言碎语、工具箱和游乐场'
 theme = 'beautifulhugo'
 # Or when using theme as hugo module
@@ -46,7 +46,7 @@ pygmentsCodefencesGuessSyntax = true
   delayDisqus = true
   showRelatedPosts = true
   showPageDates = true
-  # summaryLength = 70
+  summaryLength = 200  # 约10-15行中文内容的概览
 #  cusdisID = "XXX" # Get your App id from cusdis.com
 #  hideAuthor = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
