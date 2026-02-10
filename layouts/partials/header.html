@@ -44,7 +44,7 @@
                       <h2 class="{{ .Type }}-subheading">{{ $subtitle }}</h2>
                     {{ end }}
                   {{ end }}
-                  {{ if eq .Type "post" }}
+                  {{ if or (eq .Type "post") (eq .Type "posts") }}
                     {{ partial "post_meta.html" . }}
                   {{ end }}
               </div>
@@ -65,7 +65,7 @@
               {{ else }}
                 <h1>{{ with $title }}{{.}}{{ else }}<br/>{{ end }}</h1>
               {{ end }}
-              {{ if ne .Type "post" }}
+              {{ if and (ne .Type "post") (ne .Type "posts") }}
                 <hr class="small">
               {{ end }}
               {{ if $subtitle }}
@@ -75,7 +75,7 @@
                   <h2 class="{{ .Type }}-subheading">{{ $subtitle }}</h2>
                 {{ end }}
               {{ end }}
-              {{ if eq .Type "post" }}
+              {{ if or (eq .Type "post") (eq .Type "posts") }}
                 {{ partial "post_meta.html" . }}
               {{ end }}
             </div>
