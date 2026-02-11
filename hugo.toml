@@ -117,6 +117,12 @@ pygmentsCodefencesGuessSyntax = true
     url = "page/parentool/"
     weight = 2
 
+[[menu.main]]
+    parent = "products"
+    name = "强直性脊柱炎康复指导"
+    url = "https://as-rehabilitation-guide.zhatrix.com/"
+    weight = 3
+
 # [[menu.main]]
 #     parent = "samples"
 #     name = "Code Sample"
