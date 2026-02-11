@@ -15,9 +15,9 @@ pygmentsCodefencesGuessSyntax = true
 
 [Services]
   [Services.Disqus]
-    # Shortname = "XXX"
+    Shortname = "zenyuzhang"
   [Services.googleAnalytics]
-    # id = "XXX"
+    id = "G-PTGVXXDVTF"
 
 # [languages]
 #   [languages.zh]
