@@ -123,6 +123,12 @@ pygmentsCodefencesGuessSyntax = true
     url = "https://as-rehabilitation-guide.zhatrix.com/"
     weight = 3
 
+[[menu.main]]
+    parent = "products"
+    name = "免费图床工具"
+    url = "https://image.zhatrix.com/"
+    weight = 4
+
 # [[menu.main]]
 #     parent = "samples"
 #     name = "Code Sample"
