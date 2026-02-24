@@ -129,6 +129,12 @@ pygmentsCodefencesGuessSyntax = true
     url = "https://image.zhatrix.com/"
     weight = 4
 
+[[menu.main]]
+    parent = "products"
+    name = "CyberChef在线工具"
+    url = "https://devchef.zhatrix.com/"
+    weight = 5
+    
 # [[menu.main]]
 #     parent = "samples"
 #     name = "Code Sample"
