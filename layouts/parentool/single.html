@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>育见成长 - 专业的宝宝成长记录工具</title>
+    <meta name="description" content="育见成长是一款专为父母设计的宝宝生活记录应用，支持喂养、睡眠、尿布、辅食等多维度记录，智能统计分析，见证宝宝每一步成长。">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero .subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: black;
+            color: white;
+            padding: 14px 48px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .download-btn::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 24px;
+            margin-right: 10px;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="white" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-90.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: #2d3748;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            border-radius: 16px;
+            background: #f8f9fa;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #2d3748;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            color: #718096;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Screenshots Section */
+        .screenshots {
+            padding: 80px 20px;
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+        }
+
+        .screenshots-slider {
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 20px 0;
+            max-width: 1400px;
+            margin: 0 auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .screenshots-slider::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .screenshots-slider::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 4px;
+        }
+
+        .screenshots-slider::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 4px;
+        }
+
+        .screenshot-item {
+            flex: 0 0 300px;
+            scroll-snap-align: center;
+            position: relative;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .screenshot-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .screenshot-label {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Highlights Section */
+        .highlights {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .highlight-item {
+            padding: 30px;
+            border-left: 4px solid #667eea;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .highlight-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2d3748;
+            font-weight: 600;
+        }
+
+        .highlight-item p {
+            color: #718096;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .cta p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            background: #2d3748;
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero .subtitle {
+                font-size: 18px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .screenshot-item {
+                flex: 0 0 250px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="app-icon">👶</div>
+            <h1>育见成长</h1>
+            <p class="subtitle">专业的宝宝生活记录工具，见证每一步成长</p>
+            <a href="https://apps.apple.com/tw/app/%E8%82%B2%E8%A7%81%E6%88%90%E9%95%BF-%E4%BA%B2%E5%AE%9D%E5%AE%9D%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95%E5%B7%A5%E5%85%B7-%E8%A7%81%E8%AF%81%E5%AE%9D%E5%AE%9D%E6%88%90%E9%95%BF%E8%BF%87%E7%A8%8B/id6748689997" class="download-btn">App Store 下载</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">全方位记录，科学育儿</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🍼</div>
+                    <h3>喂养记录</h3>
+                    <p>详细记录母乳亲喂、瓶喂、吸奶时长和奶量，支持左右侧独立计时，智能统计每日奶量趋势</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">😴</div>
+                    <h3>睡眠管理</h3>
+                    <p>追踪宝宝睡眠时长和睡眠姿势，分析睡眠规律，帮助建立健康的作息习惯</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚼</div>
+                    <h3>尿布记录</h3>
+                    <p>记录尿布更换次数，追踪尿液颜色和大便性状，及时发现健康问题</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🥣</div>
+                    <h3>辅食日志</h3>
+                    <p>记录辅食种类和宝宝反应，支持照片上传，科学管理辅食添加进度</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>智能统计</h3>
+                    <p>自动生成周统计图表和数据表格，清晰展示喂养、睡眠、尿布等各项数据趋势</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>多宝支持</h3>
+                    <p>支持管理多个宝宝，独立记录和统计，二胎三胎家庭的理想选择</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots">
+        <div class="container">
+            <h2 class="section-title">精美界面，操作简单</h2>
+            <div class="screenshots-slider">
+                <div class="screenshot-item">
+                    <img src="/parentool/images/首页.PNG" alt="首页">
+                    <div class="screenshot-label">首页 - 日历视图</div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="/parentool/images/新增.PNG" alt="新增记录">
+                    <div class="screenshot-label">快速添加记录</div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="/parentool/images/统计页面.PNG" alt="统计页面">
+                    <div class="screenshot-label">数据统计分析</div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="/parentool/images/设置页面.PNG" alt="设置页面">
+                    <div class="screenshot-label">个性化设置</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>6种</h3>
+                    <p>记录类型</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4类</h3>
+                    <p>统计分析</p>
+                </div>
+                <div class="stat-item">
+                    <h3>中英文</h3>
+                    <p>双语支持</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>隐私保护</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <div class="container">
+            <h2 class="section-title">为什么选择育见成长</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <h3>🎯 专业设计</h3>
+                    <p>基于儿科医生建议和育儿最佳实践设计，记录项目科学全面，帮助父母更好地照顾宝宝</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>⚡ 快速记录</h3>
+                    <p>简洁的界面设计，3秒完成一次记录，支持实时计时功能，不打断照顾宝宝的节奏</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>📈 数据可视化</h3>
+                    <p>自动生成精美图表，奶量趋势、睡眠规律一目了然，为医生就诊提供详细数据支持</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>🔒 隐私安全</h3>
+                    <p>所有数据本地存储，不上传云端，100%保护宝宝隐私，父母可以安心使用</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>🌍 中英双语</h3>
+                    <p>完整的中英文本地化支持，界面语言可随时切换，适合不同语言环境的家庭</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>💪 持续更新</h3>
+                    <p>开发团队持续优化功能和体验，定期更新版本，为用户提供更好的使用体验</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>开始记录宝宝的成长时刻</h2>
+            <p>下载育见成长，见证每一个珍贵瞬间</p>
+            <a href="https://apps.apple.com/tw/app/%E8%82%B2%E8%A7%81%E6%88%90%E9%95%BF-%E4%BA%B2%E5%AE%9D%E5%AE%9D%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95%E5%B7%A5%E5%85%B7-%E8%A7%81%E8%AF%81%E5%AE%9D%E5%AE%9D%E6%88%90%E9%95%BF%E8%BF%87%E7%A8%8B/id6748689997" class="download-btn">免费下载</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 育见成长 Parentoolkit. All rights reserved.</p>
+            <p style="margin-top: 10px; opacity: 0.6;">专为父母打造的宝宝成长记录工具</p>
+        </div>
+    </footer>
+</body>
+</html>

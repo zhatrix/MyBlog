@@ -114,7 +114,7 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     parent = "products"
     name = "奶爸工具箱"
-    url = "page/parentool/"
+    url = "parentool/"
     weight = 2
 
 [[menu.main]]
@@ -134,7 +134,7 @@ pygmentsCodefencesGuessSyntax = true
     name = "CyberChef在线工具"
     url = "https://devchef.zhatrix.com/"
     weight = 5
-    
+
 # [[menu.main]]
 #     parent = "samples"
 #     name = "Code Sample"
