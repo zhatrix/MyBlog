@@ -125,8 +125,8 @@ pygmentsCodefencesGuessSyntax = true
 
 [[menu.main]]
     parent = "products"
-    name = "免费图床工具"
-    url = "https://image.zhatrix.com/"
+    name = "物流仿真、规划、提效工具箱"
+    url = "https://www.wuliutool.cn/"
     weight = 4
 
 [[menu.main]]
