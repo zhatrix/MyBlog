@@ -141,6 +141,11 @@ pygmentsCodefencesGuessSyntax = true
     url = "https://devchef.zhatrix.com/"
     weight = 6
 
+[[menu.main]]
+    parent = "products"
+    name = "Open Logistics Tracking Schema"
+    url = "https://github.com/open-logistics-tracking/OLTS"
+    weight = 7
 # [[menu.main]]
 #     parent = "samples"
 #     name = "Code Sample"
