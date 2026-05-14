@@ -126,14 +126,20 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     parent = "products"
     name = "物流仿真、规划、提效工具箱"
-    url = "https://www.wuliutool.cn/"
+    url = "https://www.wuliutool.com/"
     weight = 4
+
+[[menu.main]]
+    parent = "products"
+    name = "多点配送道路规划"
+    url = "https://routeplan.wuliutool.com/"
+    weight = 5
 
 [[menu.main]]
     parent = "products"
     name = "CyberChef在线工具"
     url = "https://devchef.zhatrix.com/"
-    weight = 5
+    weight = 6
 
 # [[menu.main]]
 #     parent = "samples"
